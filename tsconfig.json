@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "allowJs": true,
+
+    "target": "ESNext",
+    "module": "commonjs",
+    "lib": ["es6"],
+
+    "outDir": "./build",
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+
+  "include": ["./**/*.ts", "./vitest.config.mts"],
+  "exclude": ["node_modules"],
+
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  }
+}
